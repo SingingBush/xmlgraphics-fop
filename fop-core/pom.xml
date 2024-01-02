@@ -328,9 +328,9 @@
       </plugin>
       <!-- code analysis - checkstyle -->
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>findbugs-maven-plugin</artifactId>
-        <version>${findbugs.plugin.version}</version>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <version>${spotbugs.plugin.version}</version>
         <configuration>
           <excludeFilterFile>src/tools/resources/findbugs/exclusions.xml</excludeFilterFile>
           <effort>Max</effort>
@@ -347,7 +347,7 @@
             </manifest>
           </archive>
         </configuration>
-      </plugin>      
+      </plugin>
     </plugins>
     <resources>
       <resource>
@@ -378,9 +378,9 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>findbugs-maven-plugin</artifactId>
-            <version>${findbugs.plugin.version}</version>
+            <groupId>com.github.spotbugs</groupId>
+            <artifactId>spotbugs-maven-plugin</artifactId>
+            <version>${spotbugs.plugin.version}</version>
             <configuration>
               <excludeFilterFile>src/tools/resources/findbugs/exclusions.xml</excludeFilterFile>
               <effort>Max</effort>
